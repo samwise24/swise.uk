@@ -134,5 +134,28 @@ body {
 /* Formatting */
 body {
   color: #050059;
+  font-family: 'Open Sans', sans-serif;
+}
+/* Top Menu */
+#menu-wrapper {
+  width: 100%;
+  display: inline-flex;
+  border-bottom: solid #050059 1px;
+}
+#menu-wrapper h1 {
+  padding: 1em 2em;
+}
+#menu-wrapper nav {
+  display: inline;
+  list-style-type: none;
+}
+#menu-wrapper nav a {
+  padding: 1em 2em;
+  border-left: solid #050059 1px;
+  text-decoration: none;
+  color: #050059;
+}
+#menu-wrapper nav a:visited {
+  color: #050059;
 }
 /*# sourceMappingURL=main.css.map */

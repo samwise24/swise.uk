@@ -10,7 +10,10 @@ and open the template in the editor.
         <title>Sam Wise</title>
     </head>
     <body>
+        <?php include ('topmenu.html'); ?>
+        
         <p> hello world</p>
+        
         <?php
         // put your code here
         ?>

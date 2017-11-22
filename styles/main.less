@@ -7,6 +7,7 @@
 @font:'Open Sans', sans-serif;
 /*@font:'Lato', sans-serif;*/
 /*@font:'Barlow', sans-serif;*/
+@border: solid @textcolour 1px;
 
 
 /* Reset */
@@ -52,5 +53,38 @@ body {
 /* Formatting */
 
 body {
-    color: @textcolour;   
+    color: @textcolour;
+    font-family: @font;
+}
+
+
+
+
+
+
+
+/* Top Menu */
+@menupadding: 1em 2em;
+
+#menu-wrapper {
+    width: 100%;
+    display: inline-flex;
+    border-bottom: @border;
+    h1 {
+        padding: @menupadding;
+    }
+    nav {
+        display: inline;
+        list-style-type: none;
+        a {
+            padding: @menupadding;
+            border-left: @border;
+            text-decoration: none;
+            color: @textcolour;
+            &:visited {
+                color: @textcolour;
+            }
+        }
+    }
+    
 }
