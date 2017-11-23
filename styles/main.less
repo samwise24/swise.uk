@@ -4,7 +4,7 @@
 */
 
 @textcolour: #050059;
-@lightcolour: #74ace8;
+@lightcolour: #9674e8;
 /*@font:'Open Sans', sans-serif;*/
 @font:'Lato', sans-serif;
 /*@font:'Barlow', sans-serif;*/
@@ -109,20 +109,6 @@ body {
     position: relative;
     z-index: -1;
     clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%);
-/*    &::after {
-        background: #fff;
-        content: '';
-        display: block;
-        height: 100%;
-        left: 0;
-        position: absolute; 
-        z-index: -1;
-        right: 0;
-        -webkit-backface-visibility: hidden;
-        bottom: -8px;
-        transform: skewY(-1deg);
-        transform-origin: 100%;*/
-    /*}*/
 }
 
 
@@ -139,7 +125,13 @@ body {
     position: relative;
     top: -35px;
     z-index: -2;
-}
-.hero-img {
     width: 100%;
+    height: 40vh;
+    background: url("../images/front-1.jpg") no-repeat top center;
+    background-size: 100%;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
+/*.hero-img {
+    width: 100%;
+}*/

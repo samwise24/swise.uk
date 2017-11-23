@@ -14,7 +14,7 @@ and open the template in the editor.
         <?php include ('topmenu.html'); ?>
 
         <div id="hero-wrapper">
-            <img class="hero-img" src="images/front-1.jpg" alt="Flanker">
+<!--            <img class="hero-img" src="images/front-1.jpg" alt="Rafale">-->
         
         
         </div>
