@@ -108,7 +108,8 @@ body {
     background: @lightcolour;
     position: relative;
     z-index: -1;
-    &::after {
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%);
+/*    &::after {
         background: #fff;
         content: '';
         display: block;
@@ -120,8 +121,8 @@ body {
         -webkit-backface-visibility: hidden;
         bottom: -8px;
         transform: skewY(-1deg);
-        transform-origin: 100%;
-    }
+        transform-origin: 100%;*/
+    /*}*/
 }
 
 
@@ -130,4 +131,15 @@ body {
 #main-wrapper {
     width: @1920mainwidth;
     margin: auto;
+}
+
+/* Images */
+
+#hero-wrapper {
+    position: relative;
+    top: -35px;
+    z-index: -2;
+}
+.hero-img {
+    width: 100%;
 }

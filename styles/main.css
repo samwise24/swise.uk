@@ -176,24 +176,34 @@ body {
   background: #74ace8;
   position: relative;
   z-index: -1;
-}
-#menu-divider::after {
-  background: #fff;
-  content: '';
-  display: block;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  z-index: -1;
-  right: 0;
-  -webkit-backface-visibility: hidden;
-  bottom: -8px;
-  transform: skewY(-1deg);
-  transform-origin: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%);
+  /*    &::after {
+        background: #fff;
+        content: '';
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute; 
+        z-index: -1;
+        right: 0;
+        -webkit-backface-visibility: hidden;
+        bottom: -8px;
+        transform: skewY(-1deg);
+        transform-origin: 100%;*/
+  /*}*/
 }
 /* Main content */
 #main-wrapper {
   width: 66vw;
   margin: auto;
+}
+/* Images */
+#hero-wrapper {
+  position: relative;
+  top: -35px;
+  z-index: -2;
+}
+.hero-img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
