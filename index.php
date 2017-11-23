@@ -13,7 +13,7 @@ and open the template in the editor.
         
         <?php include ('topmenu.html'); ?>
 
-        <div id="hero-wrapper">
+        <div id="hero-wrapper-front">
 <!--            <img class="hero-img" src="images/front-1.jpg" alt="Rafale">-->
         
         

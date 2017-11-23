@@ -184,7 +184,7 @@ body {
   margin: auto;
 }
 /* Images */
-#hero-wrapper {
+#hero-wrapper-front {
   position: relative;
   top: -35px;
   z-index: -2;
