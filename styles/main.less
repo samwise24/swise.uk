@@ -8,7 +8,7 @@
 /*@font:'Open Sans', sans-serif;*/
 @font:'Lato', sans-serif;
 /*@font:'Barlow', sans-serif;*/
-@border: solid @lightcolour 3px;
+@border: solid @lightcolour 4px;
 @1920mainwidth: 66vw;
 
 
@@ -78,6 +78,7 @@ body {
     align-items: center;
     flex-wrap: nowrap;
     width: 100%;
+    text-align: center;
 /*    padding-left: 33vw;*/
     h1 {
         padding: @menupadding;
@@ -103,8 +104,24 @@ body {
     }
 }
 #menu-divider {
-    height: 1.5em;
+    height: 50px;
     background: @lightcolour;
+    position: relative;
+    z-index: -1;
+    &::after {
+        background: #fff;
+        content: '';
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute; 
+        z-index: -1;
+        right: 0;
+        -webkit-backface-visibility: hidden;
+        bottom: -8px;
+        transform: skewY(-1deg);
+        transform-origin: 100%;
+    }
 }
 
 

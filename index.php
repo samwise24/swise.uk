@@ -12,7 +12,12 @@ and open the template in the editor.
     <body>
         
         <?php include ('topmenu.html'); ?>
+
+        <div id="hero-wrapper">
+            
         
+        
+        </div>
         <div id="main-wrapper">
             <p>hello world</p>
 

@@ -146,6 +146,7 @@ body {
   align-items: center;
   flex-wrap: nowrap;
   width: 100%;
+  text-align: center;
   /*    padding-left: 33vw;*/
 }
 #menu-wrapper h1 {
@@ -163,7 +164,7 @@ body {
 }
 #menu-wrapper nav a {
   padding: 1em 2em;
-  border-left: solid #74ace8 3px;
+  border-left: solid #74ace8 4px;
   text-decoration: none;
   color: #050059;
 }
@@ -171,8 +172,24 @@ body {
   color: #050059;
 }
 #menu-divider {
-  height: 1.5em;
+  height: 50px;
   background: #74ace8;
+  position: relative;
+  z-index: -1;
+}
+#menu-divider::after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  -webkit-backface-visibility: hidden;
+  bottom: -8px;
+  transform: skewY(-1deg);
+  transform-origin: 100%;
 }
 /* Main content */
 #main-wrapper {
