@@ -2,7 +2,7 @@
     Created on : 22-Nov-2017, 11:16:49
     Author     : Sam
 */
-/*@font:'Lato', sans-serif;*/
+/*@font:'Open Sans', sans-serif;*/
 /*@font:'Barlow', sans-serif;*/
 /* Reset */
 html,
@@ -133,29 +133,50 @@ body {
 }
 /* Formatting */
 body {
-  color: #050059;
-  font-family: 'Open Sans', sans-serif;
+  /*    color: @textcolour;*/
+  font-family: 'Lato', sans-serif;
 }
 /* Top Menu */
 #menu-wrapper {
-  width: 100%;
+  color: #050059;
+  /*    width: @1920mainwidth;*/
+  margin: auto;
   display: inline-flex;
-  border-bottom: solid #050059 1px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  /*    padding-left: 33vw;*/
 }
 #menu-wrapper h1 {
   padding: 1em 2em;
 }
+#menu-wrapper h1 a {
+  text-decoration: none;
+}
+#menu-wrapper h1 a:visited {
+  color: #050059;
+}
 #menu-wrapper nav {
-  display: inline;
-  list-style-type: none;
+  display: inline-flex;
+  flex-wrap: nowrap;
 }
 #menu-wrapper nav a {
   padding: 1em 2em;
-  border-left: solid #050059 1px;
+  border-left: solid #74ace8 3px;
   text-decoration: none;
   color: #050059;
 }
 #menu-wrapper nav a:visited {
   color: #050059;
+}
+#menu-divider {
+  height: 1.5em;
+  background: #74ace8;
+}
+/* Main content */
+#main-wrapper {
+  width: 66vw;
+  margin: auto;
 }
 /*# sourceMappingURL=main.css.map */

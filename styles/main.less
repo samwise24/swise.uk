@@ -4,10 +4,12 @@
 */
 
 @textcolour: #050059;
-@font:'Open Sans', sans-serif;
-/*@font:'Lato', sans-serif;*/
+@lightcolour: #74ace8;
+/*@font:'Open Sans', sans-serif;*/
+@font:'Lato', sans-serif;
 /*@font:'Barlow', sans-serif;*/
-@border: solid @textcolour 1px;
+@border: solid @lightcolour 3px;
+@1920mainwidth: 66vw;
 
 
 /* Reset */
@@ -53,8 +55,9 @@ body {
 /* Formatting */
 
 body {
-    color: @textcolour;
+/*    color: @textcolour;*/
     font-family: @font;
+    
 }
 
 
@@ -67,15 +70,27 @@ body {
 @menupadding: 1em 2em;
 
 #menu-wrapper {
-    width: 100%;
+    color: @textcolour;
+/*    width: @1920mainwidth;*/
+    margin: auto;
     display: inline-flex;
-    border-bottom: @border;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+/*    padding-left: 33vw;*/
     h1 {
         padding: @menupadding;
+        a {
+            text-decoration: none;
+            &:visited {
+                color: @textcolour;
+            }
+        }
     }
     nav {
-        display: inline;
-        list-style-type: none;
+        display: inline-flex;
+        flex-wrap: nowrap;
         a {
             padding: @menupadding;
             border-left: @border;
@@ -86,5 +101,16 @@ body {
             }
         }
     }
-    
+}
+#menu-divider {
+    height: 1.5em;
+    background: @lightcolour;
+}
+
+
+
+/* Main content */
+#main-wrapper {
+    width: @1920mainwidth;
+    margin: auto;
 }
