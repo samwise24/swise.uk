@@ -19,11 +19,15 @@ and open the template in the editor.
         
         </div>
         <div id="main-wrapper">
-            <p>hello world</p>
+            <h1 class="headline">
+                Yes, my name actually is Sam Wise
+            </h1>
 
             <?php
             // put your code here
             ?>
         </div>
+        
+        <?php include('footer.php'); ?>
     </body>
 </html>

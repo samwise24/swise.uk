@@ -82,10 +82,11 @@ body {
     position: fixed;
     height: 3em;
     background: #fff;
+    z-index: 2;
     h1 {
-        padding: @menupadding;
         a {
             text-decoration: none;
+            padding: @menupadding;
             &:visited {
                 color: @textcolour;
             }
@@ -122,6 +123,20 @@ body {
     width: @1920mainwidth;
     margin: auto;
     height: 2000px;
+    .headline {
+        font-size: 2.5em;
+        color: @textcolour;
+    }
+}
+
+
+/* Footer */
+#footer{
+    background: @lightcolour;
+    padding: 1.5em 2em;
+    p {
+        color: #fff;
+    }
 }
 
 /* Images */
@@ -135,7 +150,7 @@ body {
     background: url("../images/front-1.jpg") no-repeat top center;
     background-size: 100%;
     background-attachment: fixed;
-    clip-path: polygon(0 0, 100% 0, 100% 91%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90.5%, 0 100%);
 }
 /*.hero-img {
     width: 100%;

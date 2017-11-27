@@ -150,12 +150,11 @@ body {
   position: fixed;
   height: 3em;
   background: #fff;
-}
-#menu-wrapper h1 {
-  padding: 1em 2em;
+  z-index: 2;
 }
 #menu-wrapper h1 a {
   text-decoration: none;
+  padding: 1em 2em;
 }
 #menu-wrapper h1 a:visited {
   color: #050059;
@@ -187,6 +186,18 @@ body {
   margin: auto;
   height: 2000px;
 }
+#main-wrapper .headline {
+  font-size: 2.5em;
+  color: #050059;
+}
+/* Footer */
+#footer {
+  background: #9674e8;
+  padding: 1.5em 2em;
+}
+#footer p {
+  color: #fff;
+}
 /* Images */
 #hero-wrapper-front {
   position: relative;
@@ -197,7 +208,7 @@ body {
   background: url("../images/front-1.jpg") no-repeat top center;
   background-size: 100%;
   background-attachment: fixed;
-  clip-path: polygon(0 0, 100% 0, 100% 91%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90.5%, 0 100%);
 }
 /*.hero-img {
     width: 100%;

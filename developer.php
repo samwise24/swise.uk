@@ -6,12 +6,16 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title></title>
+        <?php include('head.html'); ?>
+        <title>Sam Wise</title>
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+        
+        <?php include ('topmenu.html'); ?>
+        <div id="hero-wrapper-developer">
+
+        
+        
+        </div>
+        
     </body>
-</html>
