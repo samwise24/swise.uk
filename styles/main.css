@@ -184,7 +184,7 @@ body {
 #main-wrapper {
   width: 66vw;
   margin: auto;
-  height: 2000px;
+  height: 1000px;
 }
 #main-wrapper .headline {
   font-size: 2.5em;
@@ -194,23 +194,50 @@ body {
 #footer {
   background: #9674e8;
   padding: 1.5em 2em;
+  text-align: right;
+  position: relative;
+  bottom: 0;
 }
 #footer p {
   color: #fff;
+  font-style: italic;
+  font-size: 0.8em;
+  padding-top: 0.5em;
+}
+#footer a {
+  color: #fff;
+}
+#footer a:visited {
+  color: #fff;
 }
 /* Images */
-#hero-wrapper-front {
+/*hero image mixin*/
+.hero-wrapper {
   position: relative;
   top: -35px;
   z-index: -2;
   width: 100%;
   height: 40vh;
-  background: url("../images/front-1.jpg") no-repeat top center;
-  background-size: 100%;
-  background-attachment: fixed;
   clip-path: polygon(0 0, 100% 0, 100% 90.5%, 0 100%);
 }
-/*.hero-img {
-    width: 100%;
-}*/
+#hero-front {
+  background: url("../images/front-1.jpg") no-repeat 0vh calc(0%);
+  background-size: 100%;
+  background-attachment: fixed;
+}
+#hero-developer {
+  background: url("../images/developer-1.jpg") no-repeat 0vh calc(0%);
+  background-size: 100%;
+  background-attachment: fixed;
+}
+#hero-photographer {
+  background: url("../images/photographer-1.jpg") no-repeat 0vh calc(0%);
+  background-size: 100%;
+  background-attachment: fixed;
+}
+#hero-writer {
+  background: url("../images/writer-1.jpg") no-repeat 0vh calc(0%);
+  background-size: 100%;
+  background-attachment: fixed;
+}
 /*# sourceMappingURL=main.css.map */

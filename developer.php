@@ -12,10 +12,10 @@ and open the template in the editor.
     <body>
         
         <?php include ('topmenu.html'); ?>
-        <div id="hero-wrapper-developer">
+        <div id="hero-developer" class="hero-wrapper">
 
         
         
         </div>
-        
+        <?php include('footer.php'); ?>
     </body>

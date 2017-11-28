@@ -122,7 +122,7 @@ body {
 #main-wrapper {
     width: @1920mainwidth;
     margin: auto;
-    height: 2000px;
+    height: 1000px;
     .headline {
         font-size: 2.5em;
         color: @textcolour;
@@ -134,24 +134,52 @@ body {
 #footer{
     background: @lightcolour;
     padding: 1.5em 2em;
+    text-align: right;
+    position: relative;
+    bottom: 0;
     p {
         color: #fff;
+        font-style: italic;
+        font-size: 0.8em;
+        padding-top: 0.5em;
+    }
+    a {
+        color: #fff;
+        &:visited {
+            color: #fff;
+        } 
     }
 }
 
 /* Images */
-
-#hero-wrapper-front {
-    position: relative;
-    top: -35px;
-    z-index: -2;
-    width: 100%;
-    height: 40vh;
-    background: url("../images/front-1.jpg") no-repeat top center;
-    background-size: 100%;
-    background-attachment: fixed;
-    clip-path: polygon(0 0, 100% 0, 100% 90.5%, 0 100%);
+/*hero image mixin*/
+.hero-image(@image) {
+        background: url("../images/@{image}.jpg") no-repeat 0vh calc(50% - 50vh);
+        background-size: 100%;
+        background-attachment: fixed;
 }
-/*.hero-img {
-    width: 100%;
-}*/
+
+.hero-wrapper {
+        position: relative;
+        top: -35px;
+        z-index: -2;
+        width: 100%;
+        height: 40vh;
+        clip-path: polygon(0 0, 100% 0, 100% 90.5%, 0 100%);
+}
+
+#hero-front {
+        .hero-image(front-1);
+}
+
+#hero-developer {
+        .hero-image(developer-1);
+}
+
+#hero-photographer {
+        .hero-image(photographer-1);
+}
+
+#hero-writer {
+        .hero-image(writer-1);
+}
