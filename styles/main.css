@@ -194,15 +194,21 @@ body {
 #footer {
   background: #9674e8;
   padding: 1.5em 2em;
-  text-align: right;
   position: relative;
   bottom: 0;
 }
-#footer p {
+#footer #footer-left p {
   color: #fff;
+  padding-top: 0.5em;
+}
+#footer #footer-right {
+  text-align: right;
+}
+#footer #footer-right p {
+  color: #fff;
+  padding-top: 0.5em;
   font-style: italic;
   font-size: 0.8em;
-  padding-top: 0.5em;
 }
 #footer a {
   color: #fff;

@@ -106,6 +106,7 @@ body {
         }
     }
 }
+
 #menu-divider {
     height: 50px;
     background: @lightcolour;
@@ -134,15 +135,27 @@ body {
 #footer{
     background: @lightcolour;
     padding: 1.5em 2em;
-    text-align: right;
+    
     position: relative;
     bottom: 0;
-    p {
+    .p() {
         color: #fff;
-        font-style: italic;
-        font-size: 0.8em;
         padding-top: 0.5em;
+        }
+    #footer-left {
+        p{
+           .p(); 
+        }
     }
+    #footer-right{
+        text-align: right;
+        p {
+            .p();
+            font-style: italic;
+            font-size: 0.8em;
+        }
+    }
+    
     a {
         color: #fff;
         &:visited {
