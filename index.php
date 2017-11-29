@@ -6,12 +6,12 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <?php include('head.html'); ?>
+        <?php include('partials/head.html'); ?>
         <title>Sam Wise</title>
     </head>
     <body>
         
-        <?php include ('topmenu.html'); ?>
+        <?php include ('partials/topmenu.html'); ?>
 
         <div id="hero-front" class="hero-wrapper">
         
@@ -27,6 +27,6 @@ and open the template in the editor.
             ?>
         </div>
         
-        <?php include('footer.php'); ?>
+        <?php include('partials/footer.php'); ?>
     </body>
 </html>

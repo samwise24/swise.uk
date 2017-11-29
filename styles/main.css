@@ -197,6 +197,9 @@ body {
   position: relative;
   bottom: 0;
 }
+#footer #footer-left {
+  padding-bottom: 1em;
+}
 #footer #footer-left p {
   color: #fff;
   padding-top: 0.5em;
