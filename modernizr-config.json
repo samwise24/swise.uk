@@ -1,0 +1,22 @@
+{
+  "minify": true,
+  "options": [
+    "setClasses"
+  ],
+  "feature-detects": [
+    "test/htmlimports",
+    "test/css/calc",
+    "test/css/cssgrid",
+    "test/css/displaytable",
+    "test/css/flexbox",
+    "test/css/flexwrap",
+    "test/css/gradients",
+    "test/css/opacity",
+    "test/css/transforms3d",
+    "test/css/transitions",
+    "test/img/srcset",
+    "test/script/async",
+    "test/script/defer",
+    "test/url/data-uri"
+  ]
+}
