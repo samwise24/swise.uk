@@ -1,0 +1,22 @@
+{
+  "name": "swise.uk",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://samwise24@github.com/samwise24/swise.uk.git"
+  },
+  "author": "Sam Wise",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samwise24/swise.uk/issues"
+  },
+  "homepage": "https://github.com/samwise24/swise.uk#readme",
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  }
+}
