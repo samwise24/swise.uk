@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/samwise24/swise.uk#readme",
   "dependencies": {
+    "modernizr": "^3.5.0",
     "normalize.css": "^7.0.0"
   }
 }
