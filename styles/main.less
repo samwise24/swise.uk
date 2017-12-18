@@ -11,6 +11,15 @@
 @border: solid @lightcolour 4px;
 @1920mainwidth: 66vw;
 
+.undo-shrink() {
+    transition: clip-path 0.3s; 
+}
+.do-shrink() {
+    clip-path: none;
+    transition: clip-path 0.3s; 
+}
+
+
 /* Formatting */
 body {
 /*    color: @textcolour;*/
@@ -21,12 +30,6 @@ h1 {
     font-size: 1em;
     font-weight: normal;
 }
-
-
-
-
-
-
 
 /* Top Menu */
 @menupadding: 1em 2em;
@@ -75,9 +78,13 @@ h1 {
     top: 3em;
     z-index: 0;
     clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%);
-    
+    .undo-shrink;
 }
- 
+
+#menu-divider.shrink {
+    height: 10px;
+    .do-shrink;
+}
 
 
 /* Main content */

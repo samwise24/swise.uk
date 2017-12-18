@@ -55,6 +55,12 @@ h1 {
   top: 3em;
   z-index: 0;
   clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%);
+  transition: clip-path 0.3s;
+}
+#menu-divider.shrink {
+  height: 10px;
+  clip-path: none;
+  transition: clip-path 0.3s;
 }
 /* Main content */
 #main-wrapper {
